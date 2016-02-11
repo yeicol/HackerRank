@@ -38,7 +38,6 @@ public class JavaDatatypes {
             } catch (NumberFormatException e) {
                 out.println(s + " can't be fitted anywhere.");
             }
-
         }
         out.close();
     }
