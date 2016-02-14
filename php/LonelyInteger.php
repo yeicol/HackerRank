@@ -5,14 +5,13 @@
  */
 
 function lonelyInteger( $A) {
-    $c = array_fill_keys($a, 0);
+    $c = array_fill_keys($A, 0);
     foreach($A as $i) {
         $c[$i]++;
     }
     foreach($c as $k => $v) {
         if($v === 1) {
-            echo $k;
-            break;
+            return $k;
         }
     }
 }
