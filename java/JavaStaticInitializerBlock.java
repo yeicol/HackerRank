@@ -7,7 +7,6 @@ import java.util.regex.*;
 
 /**
  * See <a href="https://www.hackerrank.com/challenges/java-static-initializer-block">Java Static Initializer Block</a>
- *
  * @author Brian Yeicol Restrepo Tangarife
  */
 public class JavaStaticInitializerBlock {
