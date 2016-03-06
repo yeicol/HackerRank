@@ -1,0 +1,9 @@
+#btns {
+    width: 75%;
+}
+#btns > div {
+    width:30%;
+    display:inline-block;
+    height:48px;
+    font-size: 24px;
+}
