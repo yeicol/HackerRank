@@ -29,6 +29,10 @@ function binaryDivision(op1, op2) {
     return (parseInt(op1, 2) / parseInt(op2, 2));
 }
 
+function dec2bin(dec) {
+    return (dec >>> 0).toString(2);
+}
+
 function addValue(val) {
     if (firstTime) {
         $res.innerHTML = val;
@@ -49,6 +53,7 @@ function clearOperation() {
     op2 = "";
     $res.innerHTML = "";
     firstOp = true;
+    op = "";
 }
 
 function getResult() {
@@ -81,7 +86,7 @@ $btn1.addEventListener("click", function() {
 $btnClr.addEventListener("click", clearOperation);
 
 $btnEql.addEventListener("click", function() {
-    var result = parseInt(getResult(), 2);
+    var result = (op2.lenght > 0) ? dec2bin(getResult()) : op1;
     clearOperation();
     $res.innerHTML = result;
     firstTime = true;
