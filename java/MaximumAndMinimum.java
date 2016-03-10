@@ -9,7 +9,7 @@ import java.util.regex.*;
  * See <a href="https://www.hackerrank.com/contests/codewhiz-java-march-2016/challenges/maximum-and-minimum">Maximum and Minimum</a>
  * @author Brian Yeicol Restrepo Tangarife
  */
-public class Solution {
+public class MaximumAndMinimum {
 
 	public static void print(int A[], int i) {
 		try {
