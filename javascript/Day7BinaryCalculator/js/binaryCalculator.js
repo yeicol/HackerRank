@@ -11,7 +11,6 @@ var op1 = "";
 var op2 = "";
 var op = "";
 var firstOp = true;
-var firstTime = true;
 
 function binaryAddition(op1, op2) {
     return (parseInt(op1, 2) + parseInt(op2, 2));
@@ -34,13 +33,7 @@ function dec2bin(dec) {
 }
 
 function addValue(val) {
-    if (firstTime) {
-        $res.innerHTML = val;
-        firstTime = false;
-    } else {
-        $res.innerHTML += val;
-    }
-
+    $res.innerHTML += val;
     if (firstOp) {
         op1 += val;
     } else {
@@ -53,7 +46,6 @@ function clearOperation() {
     op2 = "";
     $res.innerHTML = "";
     firstOp = true;
-    op = "";
 }
 
 function getResult() {
@@ -86,10 +78,12 @@ $btn1.addEventListener("click", function() {
 $btnClr.addEventListener("click", clearOperation);
 
 $btnEql.addEventListener("click", function() {
-    var result = (op2.lenght > 0) ? dec2bin(getResult()) : op1;
-    clearOperation();
+    var result = dec2bin(getResult());
+    op1 = result;
+    op2 = "";
+    firstOP = true;
     $res.innerHTML = result;
-    firstTime = true;
+
 });
 
 $btnSum.addEventListener("click", function() {
