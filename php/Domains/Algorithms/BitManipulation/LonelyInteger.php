@@ -3,7 +3,6 @@
  * See <a href="https://www.hackerrank.com/challenges/lonely-integer">Lonely Integer</a>
  * @author Brian Yeicol Restrepo Tangarife
  */
-
 function lonelyInteger( $A) {
     $c = array_fill_keys($A, 0);
     foreach($A as $i) {

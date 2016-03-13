@@ -1,3 +1,8 @@
+/**
+ * See <a href="https://www.hackerrank.com/contests/javascript-week2/challenges/binary-calculator">Day 7: Binary Calculator</a>
+ * @author Brian Yeicol Restrepo Tangarife
+ */
+
 var $res = document.getElementById('res');
 var $btn0 = document.getElementById('btn0');
 var $btn1 = document.getElementById('btn1');

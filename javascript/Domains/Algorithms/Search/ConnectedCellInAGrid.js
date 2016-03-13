@@ -2,6 +2,26 @@
  * See <a href="https://www.hackerrank.com/challenges/connected-cell-in-a-grid">Connected Cell in a Grid</a>
  * @author Brian Yeicol Restrepo Tangarife
  */
+function main() {
+    var m = parseInt(readLine()) - 1;
+    var n = parseInt(readLine()) - 1;
+    var toInteger = a => parseInt(a, 10);
+
+    var m
+    for (var i = 0; i <= m; i++) {
+        r.push(readLine().split(" ").map(toInteger));
+    }
+    var t = 0;
+    var k = 0;
+    for (var x = 0; x <= m; x++) {
+        for (var y = 0; y <= n; y++) {
+            k = region(x, y, m, n);
+            t = k > t ? k : t;
+        }
+    }
+    console.log(t);
+}
+
 process.stdin.resume();
 process.stdin.setEncoding('ascii');
 r = [];
@@ -20,25 +40,6 @@ process.stdin.on('end', function () {
 
 function readLine() {
     return input_stdin_array[input_currentline++];
-}
-function main() {
-    var m = parseInt(readLine()) - 1;
-    var n = parseInt(readLine()) - 1;
-    var toInteger = a => parseInt(a,10);
-
-    var m
-    for (var i = 0; i <= m; i++) {
-        r.push(readLine().split(" ").map(toInteger));
-    }
-    var t = 0;
-    var k = 0;
-    for(var x = 0; x <= m; x++) {
-        for (var y = 0; y <= n; y++){
-            k = region(x, y, m, n);
-            t = k > t ? k : t;
-        }
-    }
-    console.log(t);
 }
 
 function region(x, y, m, n) {
