@@ -6,7 +6,7 @@ import java.io.PrintWriter;
 import java.util.BitSet;
 
 /**
- * See <a href="https://www.hackerrank.com/challenges/a-very-big-sum">Java BitSet</a>
+ * See <a href="https://www.hackerrank.com/contests/codewhiz-java-march-2016/challenges/java-bitset">Java BitSet</a>
  * @author Brian Yeicol Restrepo Tangarife
  */
 public class JavaBitSet {
