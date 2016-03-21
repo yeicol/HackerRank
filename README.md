@@ -1,2 +1,2 @@
-# hackerrank
-challenges 
+# HackerRank 
+Solutions to [HackerRank](HackerRank "HackerRank") challenges 
