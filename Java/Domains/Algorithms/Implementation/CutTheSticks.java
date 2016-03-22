@@ -6,7 +6,7 @@ import java.io.PrintWriter;
 import java.util.Arrays;
 
 /**
- *
+ * See <a href="https://www.hackerrank.com/challenges/cut-the-sticks">Cut the sticks</a>
  * @author Brian Yeicol Restrepo Tangarife
  */
 public class CutTheSticks {
@@ -17,44 +17,10 @@ public class CutTheSticks {
     public static void main(String[] args) throws IOException {
         in.readLine();
         String str = in.readLine();
-        int[] S = Arrays.stream(str.split(" ")).mapToInt(Integer::parseInt).toArray();
-        quickSort(S, 0, S.length - 1);
+
+        int[] S = Arrays.stream(str.split(" ")).mapToInt(Integer::parseInt).sorted().toArray();
         printCuts(S);
         out.close();
-    }
-
-    private static int partition(int A[], int left ,int r) {
-        int i = left, j = r;
-        int tmp;
-        int p = A[(left + r) / 2];
-
-        while (i <= j) {
-            while (A[i] < p) {
-                i++;
-            }
-            while (A[j] > p) {
-                j--;
-            }
-            if (i <= j) {
-                tmp = A[i];
-                A[i] = A[j];
-                A[j] = tmp;
-                i++;
-                j--;
-            }
-        };
-
-        return i;
-    }
-
-    private static void quickSort(int A[], int left, int right) {
-        int index = partition(A, left, right);
-        if (left < index - 1) {
-            quickSort(A, left, index - 1);
-        }
-        if (index < right) {
-            quickSort(A, index, right);
-        }
     }
 
     private static void printCuts(int sticks[]) {
