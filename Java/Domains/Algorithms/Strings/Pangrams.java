@@ -4,7 +4,7 @@ import java.io.InputStreamReader;
 import java.io.PrintWriter;
 
 /**
- *
+ * See <a href="https://www.hackerrank.com/challenges/pangrams">Pangrams</a>
  * @author Brian Yeicol Restrepo Tangarife
  */
 public class Pangrams {

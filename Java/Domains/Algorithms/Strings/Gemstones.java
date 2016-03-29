@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.stream.Stream;
 
 /**
- * See <a href="https://www.hackerrank.com/challenges/gem-stones/submissions">Gemstones</a>
+ * See <a href="https://www.hackerrank.com/challenges/gem-stones">Gemstones</a>
  * @author Brian Yeicol Restrepo Tangarife
  */
 public class Gemstones {

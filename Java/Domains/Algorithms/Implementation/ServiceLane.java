@@ -6,7 +6,7 @@ import java.io.PrintWriter;
 import java.util.Arrays;
 
 /**
- * See <a href="https://www.hackerrank.com/challenges/service-lane">Srvice Lane</a>
+ * See <a href="https://www.hackerrank.com/challenges/service-lane">Service Lane</a>
  * @author Brian Yeicol Restrepo Tangarife
  */
 public class ServiceLane {

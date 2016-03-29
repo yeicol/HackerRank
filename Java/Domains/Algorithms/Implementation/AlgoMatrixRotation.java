@@ -7,7 +7,7 @@ import static java.lang.Math.min;
 import java.util.Arrays;
 
 /**
- *
+ * See <a href="https://www.hackerrank.com/challenges/matrix-rotation-algo">[Algo] Matrix Rotation</a>
  * @author Brian Yeicol Restrepo Tangarife
  */
 public class AlgoMatrixRotation {
