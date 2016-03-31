@@ -18,7 +18,7 @@ $fp = fopen("php://stdin", "r");
 
 fscanf($fp, "%d", $N);
 $A = fgets($fp);
-$A = split(' ',$A);
+$A = explode(' ', $A);
 echo lonelyInteger($A);
 
 ?>

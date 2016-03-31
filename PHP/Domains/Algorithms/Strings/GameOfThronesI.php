@@ -15,7 +15,7 @@ function canBePalidrome($string){
             $occurrences[$char] = 1;
         }
     }
-    $maxOdd = $length  %2 === 0 ? 0 : 1;
+    $maxOdd = $length %2 === 0 ? 0 : 1;
     $odd = 0;
     foreach($occurrences as $ocurrence){
        if($ocurrence %2 !== 0 && ++$odd > $maxOdd){
